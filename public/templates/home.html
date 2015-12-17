@@ -5,10 +5,10 @@
       <form role="form" ng-submit="getData($event, state, city)">
         <fieldset>
           <div class="form-group">
-            <input type="text" class="title" ng-model="state" placeholder="California" required>
+            <input type="text" class="form-control" ng-model="state" placeholder="California" required>
           </div>
           <div class="form-group">
-            <input type="text" class="title" ng-model="city" placeholder="San Francisco" required>
+            <input type="text" class="form-control" ng-model="city" placeholder="San Francisco" required>
           </div>
           <div class="form-group">
             <button type="submit" class="btn btn-md btn-success btn-block confirm"><i class="fa fa-check"></i> Request</button>
@@ -16,8 +16,8 @@
         </fieldset>
       </form>
     </div>
-    <hr>
     <div class="col-sm-12">
+      <hr>
       <table class="table table-striped">
         <thead>
           <tr>
@@ -53,7 +53,7 @@
             <td>{{wf.cond}}</td>
             <td>{{wf.tCurC}}&deg;C</td>
             <td>{{wf.tCurF}}</td>
-            <td>{{wf.tTomC}}</td>
+            <td>{{wf.tTomC}}&deg;C</td>
             <td>{{wf.tTomF}}</td>
           </tr>
         </tbody>
