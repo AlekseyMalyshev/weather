@@ -1,0 +1,31 @@
+{
+  "name": "weather",
+  "version": "1.0.0",
+  "description": "Compare weather from different sources.",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:AlekseyMalyshev/weather.git"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "postinstall": "./node_modules/bower/bin/bower install",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "5.0.0"
+  },
+  "author": "Aleksey Malyshev",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^0.8.5",
+    "body-parser": "~1.13.2",
+    "bower": "^1.7.1",
+    "cheerio": "^0.19.0",
+    "express": "~4.13.1",
+    "jsonwebtoken": "^5.4.1",
+    "mongoose": "^4.3.1",
+    "morgan": "~1.6.1",
+    "request": "^2.67.0",
+    "serve-favicon": "~2.3.0"
+  }
+}

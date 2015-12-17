@@ -1,0 +1,25 @@
+
+input.title {
+  width: 100%;
+}
+
+textarea.thread-msg {
+  width: 100%;
+}
+
+div.panel-inner {
+  margin-left: 15px;
+  margin-bottom: 0;
+}
+
+hr.post-separator {
+  margin: 0;
+}
+
+div.redd-heading {
+  padding: 5px;
+}
+
+div.redd-body {
+  padding: 5px;
+}

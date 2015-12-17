@@ -1,0 +1,64 @@
+<div ng-init="init()" class="container">
+  <div class="row">
+    <h3 class="text-center">Compare weather from different sources</h3>
+    <div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
+      <form role="form" ng-submit="getData($event, state, city)">
+        <fieldset>
+          <div class="form-group">
+            <input type="text" class="title" ng-model="state" placeholder="California" required>
+          </div>
+          <div class="form-group">
+            <input type="text" class="title" ng-model="city" placeholder="San Francisco" required>
+          </div>
+          <div class="form-group">
+            <button type="submit" class="btn btn-md btn-success btn-block confirm"><i class="fa fa-check"></i> Request</button>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+    <hr>
+    <div class="col-sm-12">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Source</th>
+            <th>Location</th>
+            <th>Current</th>
+            <th colspan="2">Current</th>
+            <th colspan="2">Tomorrow</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="{{yahoo.src}}">Yahoo</a></td>
+            <td>{{yahoo.location}}</td>
+            <td>{{yahoo.cond}}</td>
+            <td>{{yahoo.tCurC}}&deg;C</td>
+            <td>{{yahoo.tCurF}}&deg;F</td>
+            <td>{{yahoo.tTomC}}</td>
+            <td>{{yahoo.tTomF}}</td>
+          </tr>
+          <tr>
+            <td><a href="{{yr.src}}">yr</a></td>
+            <td>{{yr.location}}</td>
+            <td>{{yr.cond}}</td>
+            <td>{{yr.tCurC}}C</td>
+            <td>{{yr.tCurF}}</td>
+            <td>{{yr.tTomC}}C</td>
+            <td>{{yr.tTomF}}</td>
+          </tr>
+          <tr>
+            <td><a href="{{wf.src}}">Weather-Forecast</a></td>
+            <td>{{wf.location}}</td>
+            <td>{{wf.cond}}</td>
+            <td>{{wf.tCurC}}&deg;C</td>
+            <td>{{wf.tCurF}}</td>
+            <td>{{wf.tTomC}}</td>
+            <td>{{wf.tTomF}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+

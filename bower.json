@@ -1,0 +1,25 @@
+{
+  "name": "weather",
+  "description": "Compare weather from different sources",
+  "main": "server.js",
+  "authors": [
+    "Aleksey Malyshev"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/AlekseyMalyshev/weather",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "font-awesome": "~4.5.0",
+    "angular": "~1.4.8",
+    "angular-ui-router": "ui-router#~0.2.15",
+    "bootstrap": "~3.3.6"
+  }
+}
